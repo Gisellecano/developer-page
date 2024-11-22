@@ -1,0 +1,604 @@
+
+<!doctype html>
+
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Practica Developer Page</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="ep-lifecycle"
+                  title="Practica Developer Page"
+                  environment="web"
+                  feedback-link="https://github.com/SolaceDev/solace-dev-codelabs/blob/master/markdown/ep-lifecycle">
+    
+      <google-codelab-step label="Etiquetas en HTML" duration="3">
+        
+        <p><strong>Practica 3: Developer Page</strong></p>
+       
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 3: Developer Page</title>
+  <style>
+      .azul {
+          color: blue;
+      }
+  </style>
+</head>
+<body>
+  <p class="azul"><strong>Etiquetas en HTML:</strong></p>
+  <ol style="font-weight: bold;">
+    <li>Crear los textos principales de etiquetas en HTML.</li>
+</ol>
+
+  <img alt="Image" src="img/img1.png"><br><br>
+  
+ 
+  <body>
+    <li><strong>2. Crear la estructura del contenido.</strong></li>
+
+    <img alt="Image" src="img/img2.png"><br><br>
+    
+    <img alt="Image" src="img/img3.png"><br><br>
+    
+   
+    <ol style="list-style-type: none; margin-left: 0; padding-left: 15px;">
+      <li><strong>3. <span style="margin-left: 5px;">Navegación para enlaces. (Debajo del header)</span></strong></li>
+  </ol>
+  
+  <img alt="Image" src="img/img4.png"><br><br>
+  
+        <li><strong>4. Añadir imágenes en HTML</strong></li>
+    </ol>
+    
+    
+    Buscar en tablericons “map-pin” con #ffc107 y 88px. Buscar también en #000000 con 40px “palette”, “brand-android”, “brand-apple” y “credit-card”. Se muestra como ejemplo la manera de insertar imágenes con la etiqueta sin cierre 
+
+
+    
+    <img alt="Image" src="img/img5.png"><br><br>
+    <img alt="Image" src="img/img6.png"><br><br>
+    <img alt="Image" src="img/img7.png"><br><br>
+    <img alt="Image" src="img/img8.png"><br><br>
+
+    <ol style="list-style-type: none; margin-left: 0; padding-left: 15px;">
+      • <strong>5<span style="margin-left: 5px;">. Añadir el formulario en la sección de contacto.</span></strong>
+
+  </ol>
+  
+  <img alt="Image" src="img/img9.png"><br><br>
+  
+  
+  <ol style="list-style-type: none; margin-left: 0; padding-left: 15px;">
+    <li style="list-style-type: disc; margin-left: 10px;"><strong>6<span style="margin-left: 5px;">.Crear hoja de estilos.</span></strong></li>
+
+</ol>
+Enlazarla con la etiqueta link en el index.html. Se muestra la técnica de precargado que optimiza la velocidad con la que se carga el CSS en el sitio web.
+<img alt="Image" src="img/img10.png"><br><br>
+
+<ol style="list-style-type: none; margin-left: 0; padding-left: 15px;">
+  • <strong>7<span style="margin-left: 5px;">.Título. </span></strong>
+  Darle estilo al h1 y poner “developer” en la etiqueta span. Para un mejor manejo en CSS, crear la clase “titulo” en el h1 y también en el h2 de “Diseño y Desarrollo Web”. Se recalca la importancia del por qué por qué se tiene que usar span y no otras etiquetas como p o h2. Ajustar el tamaño de letra. También se recalca la importancia de las unidades de medida (em, píxeles y rem). Aplicar el hack del 62.5% y 16 px. 
+  1 rem = 10 px https://nekocalc.com/es/px-a-rem-conversor
+ 
+</ol>
+
+<img alt="Image" src="img/img11.png"><br><br>
+<img alt="Image" src="img/img12.png"><br><br>
+
+<ol style="list-style-type: none; margin-left: 0; padding-left: 15px;">
+  • <strong>8<span style="margin-left: 5px;">.Especificidad en css.</span></strong>
+  Se refiere a la forma en que se resuelven los conflictos cuando múltiples reglas CSS se aplican a un mismo elemento HTML. Las reglas más específicas tienen prioridad sobre las reglas menos específicas. También existe la regla !important la cual no es muy recomedable usar. 
+
+ 
+</ol>
+
+<table>
+  <tr>
+    <td><img alt="Image" src="img/img13.png"></td>
+    <td><img alt="Image" src="img/img14.png"></td>
+    <td><img alt="Image" src="img/img15.png"></td>
+  </tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Css" duration="2">
+             
+            <li><strong>9. Color en css</strong></li>
+      
+        Se crea la paleta de colores de manera global. Se crea un pseudo-selector, por ejemplo, root es un elemento que no existe como tal, pero que sirve para almacenar variables y se le conoce como custom properties. Una ventaja es que, si a lo largo del proyecto existe un cambio en algún color de la paleta, no se tendría que cambiar dicho color en todas las partes del código, sino únicamente en la definición de variables del custom properties. Se colocan al principio del código en CSS:
+        
+
+        <table>
+          <tr>
+            <td><img alt="Image" src="img/img16.png" width="400" height="300"></td>
+            <td><img alt="Image" src="img/img17.png" width="400" height="150"></td>
+
+          </tr>
+        </table>
+        <li><strong>9. Fuente en css</strong></li>
+
+      
+        Existen varias páginas que ofrecen fuentes (tipografías) gratuitas, hay algunas que pueden llegar a costar hasta $20 k. En css se usa la propiedad “font-family” y se suelen poner 3 tipos de fuentes con el fin de que, si no existe alguna fuente en el sistema, continúe con la otra fuente. Por ejemplo, se pone font-family: Arial, Helvetica, Sans-Serif y significa que si el sistema no tiene Arial, se intentará cargar Helvetica y se aplicaría lo mismo con Sans-Serif. Buscar el tipo de letra “Krub” y seleccionar regular 400 y bold 700. https://fonts.google.com/specimen/Krub?query=krub
+
+        <img alt="Image" src="img/img18.png"><br><br>
+
+        <li><strong>11.	Normalize en css</strong></li>
+
+      
+        Para intentar estandarizar de la mejor manera posible la forma en la que los diferentes navegadores interpretan los estilos de un sitio web, se creó normalize.css. Se busca en google y se agrega el código a un nuevo archivo  dentro de la carpeta CSS. Importante que el navegador no tenga un auto traductor porque podría afectar los nombres de los selectores. Siempre debe cargar primero y se deja la hoja de estilos personalizada hasta el final. Añadirle le preload y su enlace al CSS.
+
+
+        <img alt="Image" src="img/img19.png"><br><br>
+
+        <li><strong>12.	Color de fondo a la barra de navegación</strong></li>
+
+        Se le crea una clase al nav y se le aplica el color secundario
+        <img alt="Image" src="img/img20.png"><br><br>
+
+        <li><strong>13.	Abarcar el color en todo el ancho de la pantalla.</strong></li>
+
+        Se crea otra clase en el nav llamada “contenedor”. Se pueden crear múltiples clases, pero para los id solo debe existir uno. A dicho contenedor se le debe dar un tamaño de 1200 pixeles (120rem) y el margen 0 para el superior/inferior y automático en el izquierdo/derecho. De esa manera se le da mejor color pero aún no se obtiene el ancho completo. Para ello se envuelve en un div cuya clase se llamaría nav-bg (bg de background) y ahí ponerle el color de fondo.
+
+        <img alt="Image" src="img/img21.png"><br><br>
+        <img alt="Image" src="img/img22.png"><br><br> 
+        <img alt="Image" src="img/img23.png"><br><br> 
+      
+        
+
+        <li><strong>14.	Probando con el nav.</strong></li>
+
+        Para probar el funcionamiento de ciertas propiedades en CSS, se añade el siguiente código:
+        <img alt="Image" src="img/img24.png"><br><br>
+        Se puede apreciar que los elementos del nav tomaron el color primario, pero no cambió el color de toda la navegación como realmente se espera. Incluso si se hace más grande un elemento del nav con lo siguiente, sigue tomando el color primario solamente en los elementos del nav y no en toda la navegación como tal:
+        <img alt="Image" src="img/img25.png" style="margin-bottom: 10px;">
+        Ahora bien, otro ejemplo es el siguiente. Si intenta colorear todo el elemento p notaremos un resultado diferente al nav:
+        <img alt="Image" src="img/img26.png"><br><br>
+        <img alt="Image" src="img/img27.png"><br><br>
+
+        <div style="text-align: center;">
+          <div style="text-align: left;">
+            Esto se debe al funcionamiento del display en CSS. Existen diferentes tipos de display, los dos más comunes (o los que el navegador aplica por defecto) son Display Block o Inline (que toma únicamente el espacio que requiere). Todos los elementos en HTML ya tienen un display por defecto y generalmente son algunos de los mencionados anteriormente.
+          
+            El display block, que es el que se usa en el HTML en general, tiene el siguiente funcionamiento:
+          </div>
+          <img alt="Image" src="img/img28.png" style="margin-bottom: 10px;">
+          El display inline, que es el que se usa en el nav, tiene el siguiente funcionamiento:
+          <img alt="Image" src="img/img29.png" style="margin-bottom: 10px;">
+
+          <p style="color: red; font-weight: bold; text-align: left;">
+            Notas importantes de display:
+          </p>
+          
+          <ul style="text-align: left;">
+            <li><strong>Ningún elemento tiene un display Flex o Grid por default (se explicará más adelante).</strong></li>
+            <li><strong>No es necesario especificar un display para cada elemento, salvo que se requiera modificar el que está por default.</strong></li>
+          </ul>
+          Mencionado lo anterior y para notar la diferencia, se añadirá la siguiente línea:
+
+
+        <img alt="Image" src="img/img30.png"><br><br>
+        Se puede observar que la disposición de los elementos cambió para ponerse uno debajo del otro:
+        <img alt="Image" src="img/img31.png"><br><br>
+      </google-codelab-step>
+      En todo este paso las líneas de código fueron para fines didácticos, por lo que se tendrán que remover.
+
+
+    
+      <google-codelab-step label="Nav" duration="4">
+
+        <li><strong>15.	Continuando con el nav.</strong></li>
+        <ul style="text-align: left;">
+          <p style="color: red; font-weight: bold; text-align: left;">
+            Repasando conceptos:
+          <li><strong>Margen es el espacio del límite del elemento hacia afuera.</strong></li>
+          <li><strong>Padding es el espacio del límite del elemento hacia adentro.
+
+          </strong></li>
+        </ul>
+
+
+        <img alt="Image" src="img/img32.png"><br><br>
+        En el ejemplo en donde primero se pone el margen, se puede ver que la navegación tiene una separación más grande y se puede notar en el espacio en blanco.
+        <img alt="Image" src="img/img33.png"><br><br>
+        En el caso del padding, se hace ese espacio de 10 rem dentro del elemento y toma el color de fondo que ya está definido en el nav-bg. Este es el funcionamiento esperado para esta parte de la práctica: 
+        <img alt="Image" src="img/img34.png"><br><br>
+        Siendo este el camino, se añade el padding de 1rem. Al igual que con el margin, la sintaxis de CSS para añadir padding puede ser de la siguiente manera:
+        <img alt="Image" src="img/img35.png"><br><br>
+        Por lo que se añade la siguiente línea:
+        <img alt="Image" src="img/img36.png"><br><br>
+      
+        <li><strong>16. Formateando el texto del nav. </strong></li>
+
+        En la etiqueta “a” se le agrega el siguiente estilo para poner el color blanco y remover el estilo de texto subrayado:
+        <img alt="Image" src="img/img37.png"><br><br>
+
+        <li><strong>17.	Usando flexbox para centrar el contenido del nav.  </strong></li>
+
+        Primero hay que identificar el elemento padre en donde se van a aplicar los estilos (“navegacion-principal”) y de ahí añadir la línea que habilita el uso de Flexbox con la propiedad justify-content:
+
+
+        <img alt="Image" src="img/img38.png"><br><br>
+        Conociendo más acerca de Flexbox:
+        <img alt="Image" src="img/img39.png"><br><br>
+        <img alt="Image" src="img/img40.png"><br><br>
+        <img alt="Image" src="img/img41.png"><br><br>
+        <img alt="Image" src="img/img42.png"><br><br>
+
+        Realmente se parece a block, pero Flexbox tiene más propiedades para distribuir adecuadamente el contenido.
+        <img alt="Image" src="img/img43.png"><br><br>
+        <img alt="Image" src="img/img44.png"><br><br>
+
+        <li><strong>18.	¿Cómo escribir escribir mejor CSS? </strong></li>
+
+        <img alt="Image" src="img/img45.png"><br><br>
+        <img alt="Image" src="img/img46.png"><br><br>
+        <img alt="Image" src="img/img47.png"><br><br>
+        <img alt="Image" src="img/img48.png"><br><br>
+        Básicamente Utility First usa una propiedad y un valor por clase, lo cual hace que sea demasiado código, pero se usa comunmente. Una herramienta llamada Tailwind CSS funciona con utilidades. (Así está el nav-bg).
+
+        <img alt="Image" src="img/img49.png"><br><br>
+        Se define una clase padre y se va seleccionando todas las etiquetas HTML.
+        <img alt="Image" src="img/img50.png"><br><br>
+        De hecho Bootstrap utiliza módulos y utilidades.
+
+        
+        <li><strong>19.	Adaptando el estilo de la letra </strong></li>
+        Se añaden dos propiedades para hacer un poco más grande la letra y que esté en <strong>"negritas"</strong>:
+
+        <img alt="Image" src="img/img51.png"><br><br>
+
+        <li><strong>20.	Añadiendo el efecto del hover. </strong></li>
+        Se usa un pseudo-clase (recordar que es una clase que se crea al momento, no son clases existentes como tal). Se añade el color de fondo como el primario y también el efecto es que el color de la letra sea más oscuro.
+
+
+        <img alt="Image" src="img/img52.png"><br><br>
+        Para que el estilo funcione de manera que tenga más espacio cada elemento del nav, hay que hacer un ajuste con el padding: tiene que quitarse de la navegación principal y situarla únicamente al elemento “a”.
+        <img alt="Image" src="img/img53.png"><br><br>
+
+        <li><strong>21.	Empezando con Responsive Web Design (diseño web adaptable o responsivo). </strong></li>
+
+        <img alt="Image" src="img/img54.png"><br><br>
+        <head>
+          <meta charset="UTF-8">
+          <title>Espaciado en Enlaces</title>
+          <style>
+              .facebook-link {
+                  color: blue;
+                  text-decoration: none; /* Elimina el subrayado */
+              }
+              .link-container {
+                  margin-top: 10px; /* Ajusta el espacio entre enlaces */
+              }
+          </style>
+      </head>
+      <body>
+          <p>
+            Un enfoque le pedía al usuario poner una url diferente depediendo del dispositivo con el que se esté usando la aplicación web. Facebook lo utiliza actualmente. Aunque realmente existía el problema de que, en lugar de mantener un sitio web, mantenías 3 o 4.
+            </p>
+          <div class="link-container">
+              <a href="https://facebook.com/" class="facebook-link">https://facebook.com/</a><br>
+              <a href="https://m.facebook.com/" class="facebook-link">https://m.facebook.com/</a>
+          </div>
+      </body>
+      </html>
+      
+      <img alt="Image" src="img/img55.png"><br><br>
+      <img alt="Image" src="img/img56.png"><br><br>
+      <img alt="Image" src="img/img57.png"><br><br>
+      <img alt="Image" src="img/img58.png"><br><br>
+
+
+        <p>Google puede penalizar a los sitios web que no son responsivos. Desde 2015, Google ha hecho cambios en su algoritmo para optimizar la experiencia de los usuarios móviles. Las páginas web que no están optimizadas para dispositivos móviles pueden ser penalizadas en los resultados de búsqueda.</p>
+        
+        <p>Esto significa que si el sitio web no está adaptado para visualizarse correctamente en dispositivos móviles, podría aparecer más abajo en los resultados de búsqueda de Google cuando los usuarios busquen desde sus teléfonos o tablets.</p>
+  
+        <p style="color: red; font-weight: bold; text-align: left;">
+          Aquí hay algunas recomendaciones para evitar ser penalizado:
+        <li><strong>1. Google prefiere sitios web cuya URL es única, independientemente del dispositivo desde el que se visite (ordenadores, tablets, móviles).</strong></li>
+        <li><strong>2. Evita el contenido duplicado. Google recomienda utilizar el mismo código HTML para todos los dispositivos, adaptando la experiencia de usabilidad vía técnicas de web responsive y siempre bajo una misma URL.</strong></li>
+          <li><strong>3. Las redirecciones son lentas. La penalización de rendimiento para ejecutar un redireccionamiento puede ser grave en los smartphones.</strong></li>
+
+          </strong></li>
+          <img alt="Image" src="img/img59.png"><br><br>
+          <img alt="Image" src="img/img60.png"><br><br>
+          <img alt="Image" src="img/img61.png"><br><br>
+          Ejemplo para probar resoluciones para teléfonos y tablets:
+          <img alt="Image" src="img/img62.png"><br><br>
+          Poner un estilo por default que aplique desde 0 píxeles:
+          <img alt="Image" src="img/img63.png"><br><br>
+          <img alt="Image" src="img/img64.png"><br><br>
+          Una pregunta común cuando se explica el tema de Media Queries: Si se coloca una propiedad fuera de los @media, ¿se tiene que reescribir en cada @media? La respuesta es no, en el media query solo se va a colocar lo que va a modificar el diseño según el tamaño de la pantalla.
+          
+          <li><strong>22.	Creando un snippet.</strong></li>
+
+      
+          En el menú superior de VS Code, seleccionar “Ver” -> “Paleta de comandos” -> Escribir “Snippet” -> Seleccionar “CSS” y añadir el siguiente código debajo del código comentado:
+  
+          <img alt="Image" src="img/img65.png"><br><br>
+          La sintaxis es la que marca el código comentado. El signo de dólar marca en dónde se va a posicionar el cursor con su respectivo orden. En el ejemplo, primero se posicionará el cursor para escribir la cantidad de pixeles y en segundo término, al presionar la tecla tabulador, se posicionará para añadir el selector. \n representa un salto de línea.
+          
+          <li><strong>23.	Aplicando el snippet.</strong></li>
+
+      
+          En la navegación principal se debe añadir flex-direction como columna y agregar el snippet para tablets (768 px) y ponerlo como row. De esta manera la condición que se espera cumplir es que, si el dispositivo tiene menos de 768px, se verá como columna para que no se pierdan los elementos; de lo contrario, los desplegará en una sola fila por sí tiene el espacio disponible.
+  
+          <img alt="Image" src="img/img66.png"><br><br>
+          <img alt="Image" src="img/img67.png"><br><br>
+          Un tip para mejorar el scroll horizontal es poniendo max-width en vez de solo width en el contenedor ya que, al hacer scroll, se vería así sin el ajuste:
+          <img alt="Image" src="img/img68.png"><br><br>
+          <img alt="Image" src="img/img69.png"><br><br>
+
+          <li><strong>24.	Ejercicio: centrar horizontalmente los elementos del nav cuando flex-direction: column</strong></li>
+
+      
+          Solución: Recordar que para Flex, las filas (row) se centran usando justify-content y para columnas (column) se utiliza align-items:
+  
+          <img alt="Image" src="img/img70.png"><br><br>
+          <img alt="Image" src="img/img71.png"><br><br>
+        </google-codelab-step>
+    
+      <google-codelab-step label="Añadir imagenes en Css" duration="15">
+        <li><strong>25.	Probando responsively app.</strong></li>
+
+      
+        Existe una aplicación muy útil para probar el sitio web en diferentes resoluciones, se recomienda descargar “Responsively app”.
+        <li><strong>26.	Añadiendo imágenes en CSS.</strong></li>
+
+      
+        Ajustando un poco el HTML para su posterior manejo a CSS, la sección donde irá la imagen llevará por nombre de clase “hero”. Asimismo, se pondrá el contenido de dicha sección en un nuevo div llamado contenido-hero. Se recomienda usar el shorcut de VS Code poniendo “div.contenido-hero” para crear más rápido dicha etiqueta HTML:
+  
+          <img alt="Image" src="img/img72.png"><br><br>
+          En el CSS se va agregando la ubicación de la imagen hero. Tomando en cuenta que se encuentra fuera del directorio de CSS, hay que usar “../” para indicar que regresaremos a un nivel del directorio. El código quedaría de la siguiente manera:
+          <img alt="Image" src="img/img73.png"><br><br>
+
+          <li><strong>27.	Modelo de caja.</strong></li>
+
+              En los diversos elementos de html, existe un modelo que es necesario conocer para poder aplicar bien nuestros estilos y lograr el resultado deseado. Al inspeccionar cualquier elemento con nuestro DevTools se puede apreciar lo siguiente:
+    
+              <table>
+                <tr>
+                  <td><img alt="Image" src="img/img74.png" width="400" height="300"></td>
+                  <td><img alt="Image" src="img/img75.png" width="400" height="150"></td>
+      
+                </tr>
+              </table>
+              Existe un problema recurrente en el modelo de caja, la adaptación correcta al tamaño de algún elemento, esto pasa porque en ocasiones se requiere un tamaño específico de width que termina siendo un poco más complicado de determinar. Lo ideal es que el tamaño del width sea lo único en lo que se invierta tiempo, pero si existe un padding y un tamaño de border, el tamaño real del elemento se hace más grande:
+              
+              <table>
+                <tr>
+                  <td><img alt="Image" src="img/img76.png" width="400" height="300"></td>
+                
+      
+                </tr>
+              </table>
+
+              Una manera sencilla de solucionarlo fue propuesta por Paul Irish, developer de Google Chrome que comparte el siguiente snippet que soluciona ese caso en donde el padding pudiera hacer más grande el elemento:
+              <img alt="Image" src="img/img77.png"><br><br>
+
+              <li><strong>28.	Efecto “sombreado”.  </strong></li>
+
+      
+              Cuando se requiere posicionar el contenido en un lugar preciso, en CSS se debe usar la posición absoluto y relativa. Como se requiere posicionar el elemento “hero”, se debe poner siempre como relativa para que el hijo se pueda posicionar de forma absoluta. Se puede manejar la posición como si fueran coordenadas como el siguiente ejemplo:
+        
+                <img alt="Image" src="img/img78.png"><br><br>
+                <img alt="Image" src="img/img80.png"><br><br>
+                Para lograr que el color rojo cubra todo el elemento como se desea, se puede hacer primeramente de la siguiente manera:
+                <img alt="Image" src="img/img81.png"><br><br>
+
+                Se recomienda aún más utilizar la siguiente sintaxis para evitar poner las “4 coordenadas” y se añade el color rgba para usar el alpha channel con la trasparencia al 70%:
+                <img alt="Image" src="img/img82.png"><br><br>
+
+                <li><strong>29.	Trabajando con los headings del hero.</strong></li>
+
+      
+                Para ir manipulando de una manera diferente los títulos, se recomienda borrar la clase del h2 que está dentro de hero.
+  
+          <img alt="Image" src="img/img83.png"><br><br>
+          Después a la clase hero se usa flex para centrar horizontal y verticalmente el texto. También se le añade el color blanco al párrafo y al encabezado.
+          <img alt="Image" src="img/img84.png"><br><br>
+          <img alt="Image" src="img/img85.png"><br><br>
+
+          Para manejar de mejor manera los tamaños de los headings, se agrega el siguiente código por debajo del body y se borra el css que centraba y le daba 3.8 rem a la clase título. Esto con el fin de manejar de manera global dichos elementos, es una buena práctica.
+
+          <img alt="Image" src="img/img86.png"><br><br>
+          Se recomienda envolver las etiquetas svg y p en un div de ayuda cuya clase de llame ubicación y se le aplica flex para alinear hacia abajo con flex-end.
+
+          <img alt="Image" src="img/img87.png"><br><br>
+
+          <img alt="Image" src="img/img88.png"><br><br>
+
+          <li><strong>30.	Creando el botón de contactar. </strong></li>
+
+      
+          En la etiqueta “a” se crea una clase llamada botón. Después del estilo del contenedor, a dicha clase se le asignará el siguiente estilo con sus respectivo media query para que se adapte el estilo usado para dispositivos móviles:
+            <img alt="Image" src="img/img89.png"><br><br>
+            <img alt="Image" src="img/img90.png"><br><br>
+            <img alt="Image" src="img/img91.png"><br><br>
+
+          
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Estilos" duration="5">
+        
+        <li><strong>31.	Añadiendo el degradado de fondo </strong></li>
+
+      
+        En el body se le agrega un linear-gradiente que funciona de manera que primero se define hacia a donde se requiere hacer el degradado, empezando por cuál color con su respectivo porcentaje hasta cuál color se pretende llegar con su respectivo porcentaje:
+          <img alt="Image" src="img/img92.png"><br><br>
+
+          <li><strong>32.	Centrar el contenido de “Mis servicios”.  </strong></li>
+
+      
+          Únicamente sería necesario agregar la clase contenedor a la etiqueta main para que reutilice el estilo previamente definido:
+
+            <img alt="Image" src="img/img93.png"><br><br>
+  
+            <li><strong>33.	Añadiendo la sombra al main.   </strong></li>
+
+      
+            Primero se añade la clase sombre al mismo contenedor de la clase anterior. 
+
+            <img alt="Image" src="img/img94.png"><br><br>
+
+            
+
+            Después se busca en una página que genera código css para box shadow:  <a href="https://m.facebook.com/" class="facebook-link">https://m.facebook.com/</a>
+Se puede ver que el código generado tiene prefijos webkit y moz, los cuales son motores para diferentes navegadores (Google Chrome y Mozilla Firefox respectivamente) y es necesario añadirlos para la compatibilidad porque box-shadow puede variar un poco entre diferentes entornos. La realidad es que actualmente sería raro que este tipo de propiedades tengan problema entre navegadores, por lo que no debería haber tanto problemas por si se remueven las dos líneas con el prefijo. Para consultar la disponibilidad de las propiedades entre diferentes navegadores, consultar en <a href="https://m.facebook.com/" class="facebook-link">https://caniuse.com/. </a>
+También se le añade un padding de 2 rem, un borde redondeado de 1 rem y el color de fondo blanco. Se  añade el estilo generado debajo del body:
+<img alt="Image" src="img/img95.png"><br><br>
+Lo único que faltaría sería que el hero tenga un margen hacia debajo de 2rem:
+<img alt="Image" src="img/img96.png"><br><br> 
+
+  <li><strong>34.	Sección de “Mis servicios   </strong></li>
+
+      
+  ¿Cuándo usar Grid y cuándo usar Flexbox?
+
+  <img alt="Image" src="img/img97.png"><br><br>
+  <img alt="Image" src="img/img98.png"><br><br>
+  En esta caso conviene más usar Grid para posicionar los elementos. Para ello se va a poner todas las 3 secciones de “Mis servicios” en un div cuya clase sea “servicios” y a su vez cada sección se llamará “servicio”. Asimismo, como en la sección de aplicaciones móviles hay 2 íconos, para poder manejar los elementos es mejor añadir cada sección de íconos en su propio div llamado “íconos” (se cierra el div antes de la apertura del párrafo):
+  <img alt="Image" src="img/img99.png"><br><br>
+  <img alt="Image" src="img/img100.png"><br><br>
+  Se utilizan las clases para manejar los siguientes estilos:
+  <img alt="Image" src="img/img101.png"><br><br>
+
+  <li><strong>35.	Comenzando los estilos del formulario.  </strong></li>
+
+      
+  Primero se cambia el cierre de la etiqueta “main” para que abarque la sección de contacto, de tal manera que se pegue por encima del footer. Asimismo, añadir la clase “formulario” en la etiqueta form.
+
+
+  <img alt="Image" src="img/img102.png"><br><br>
+  <img alt="Image" src="img/img103.png"><br><br>
+  Se introduce la función min() en CSS que ayuda ahorrar varios media querys. En esencia se pregunta: ¿Qué es más pequeño, 60rem o el 100% del tamaño de la pantalla? 
+  Ejemplo 1: Sí tengo un dispositivo móvil con 488px de ancho, es más pequeño el 100%, por lo que tomará ese valor y no los 60 rem. 
+  Ejemplo 2: Caso contrario, tengo una tablet con 768px, ahí sí es menor 60 rem, por lo que se tomará ese valor
+  Se muestran los estilos para el formulario en general, para el fieldset en donde se le remueve el borde que se le asigna por default y para el legend se le da el estilo a la letra y al margen:
+  <img alt="Image" src="img/img104.png"><br><br>
+  <img alt="Image" src="img/img105.png"><br><br>
+
+  Para manejar los estilos de los “label’s”, estos estarán en un div cuya clase sería “contenedor-campos” y cada label tendrá como clase “campo”. Utilizar el tip 6 de multicursor para darle clase a cada div de manera rápida. Añadir también la clase “enviar” al botón.
+
+  <img alt="Image" src="img/img106.png"><br><br>
+  <img alt="Image" src="img/img107.png"><br><br>
+        |Para manejar los estilos de los “label’s”, estos estarán en un div cuya clase sería “contenedor-campos” y cada label tendrá como clase “campo”. Utilizar el tip 6 de multicursor para darle clase a cada div de manera rápida. Añadir también la clase “enviar” al botón.
+        <img alt="Image" src="img/img109.png"><br><br>
+        Se empiezan a añadir los selectores:
+        <img alt="Image" src="img/img110.png"><br><br>
+        <img alt="Image" src="img/img111.png"><br><br>
+
+        
+  <li><strong>36.	Estilos al botón.  </strong></li>
+
+      
+  Antes ya se había creado una clase llamada “boton” que se puede reutilizar con algunos ajustes y mejoras. En el input del botón se le agrega esa clase:
+
+  <img alt="Image" src="img/img112.png"><br><br>
+  Ya tiene un estilo diferente al que estaba antes, pero todavía falta estilizar. Como el botón de “contactar” era una etiqueta “a” y este botón es de la etiqueta “input”, tiene apariencias diferentes. Todos los inputs tienen un border por default que, en este caso, habría que remover. Aquí se puede ver la diferencia de bordes:
+  <img alt="Image" src="img/img113.png"><br><br>
+
+  Para remover ese borde, se agrega la siguiente línea al selector de clase “boton” y se agrega el hover para que el cursor cambie a la mano cuando esté encima del botón:
+  <img alt="Image" src="img/img114.png"><br><br>
+  <img alt="Image" src="img/img115.png"><br><br>
+  Se toma en cuenta el enfoque de utilidades para alinear el botón a la derecha. Para ello se ajusta el nombre de las clases en html:
+  <img alt="Image" src="img/img116.png"><br><br>
+        
+En utilidades, la w suele representar “width”, sm “small” y 100 es que toma el 100% del espacio disponible. En CSS se agregan los estilos correspondientes justo arriba del apartado de “Navegación principal”. Se le asigna que si el tamaño de la pantalla corresponde a una smartphone, tomará el 100%, pero el comportamiento que se espera si se ve desde un dispositivo más grande sería el tamaño automático del botón y que su alineación sea a la derecha (se usa flex-end).
+<img alt="Image" src="img/img117.png"><br><br>
+<img alt="Image" src="img/img118.png"><br><br>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Inputs" duration="15">
+        <li><strong> 37.Posiciones de los inputs.  </strong></li>
+
+      
+        Para lograr la posición de los inputs, se recomienda usar grid para ahorrar código y no cambiar nada del HTML. Se le añade el respectivo media query para manejar los casos de los dispositivos que tengan el tamaño menor al del una tablet de 768px. Se usará la pseudo-selector nth-child que significa el # del hijo del elemento en cuestión. En los campos sería: nombre, teléfono, correo, mensaje. Como requerimos modificar correo y mensaje, usaremos 3 y 4 en nth-child. El código se pondría debajo de los selectores de la clase formulario. Se manejan los estilos de la siguiente manera:
+
+
+        <img alt="Image" src="img/img119.png"><br><br>
+        <li><strong> 38.	Centrar el texto del footer. </strong></li>
+
+      
+        Respetando la especificidad de CSS, se podría utilizar un selector de etiqueta, pero es mejor práctica usar el selector de clase, por lo que se crea y se centra con text-align:
+
+        <img alt="Image" src="img/img120.png"><br><br>
+        <img alt="Image" src="img/img121.png"><br><br>
+        <li><strong>39.	Agregar la propiedad scroll-snap </strong></li>
+
+      
+        El Scroll Snap es una propiedad de CSS que permite controlar el desplazamiento en una página web. Al hacer scroll, ya sea con el ratón desde un ordenador o portátil, o desde la pantalla de un smartphone, este desplazamiento se detiene en un punto en concreto de la web, normalmente el comienzo de una nueva sección. Esto es muy útil en sitios web que tienen una disposición en diferentes bloques horizontales, y se quiere que los usuarios salten de uno a otro de la forma más directa posible. Un buen ejemplo de una página que utiliza Scroll Snap es la página de Tesla. Al navegar por ella, se puede observar cómo se salta directamente de una imagen a otra de forma directa. Es importante mencionar que la compatibilidad de Scroll Snap con los navegadores web es bastante amplia, asegurando un buen funcionamiento en casi el 94% de los usuarios. Sin embargo, hay que tener en cuenta que puede haber problemas con Internet Explorer y los navegadores para móviles de Opera. Otro ejemplo además de la página de Tesla, es la página de los Airpods Pro de apple que utiliza Scroll Snap para crear una animación que cambia a medida que el usuario se desplaza por la página. Para manejar en qué parte se estaría aplicando el scroll, se añadiría una clase para el h2 de “Mis servicios” y “Contacto”:
+
+
+        <img alt="Image" src="img/img122.png"><br><br>
+        <img alt="Image" src="img/img123.png"><br><br>
+        En la etiqueta global se añade la propiedad del scroll snap y en la parte inferior se definen las propiedades más específicas correspondientes a los títulos y encabezados:
+        <img alt="Image" src="img/img124.png"><br><br>
+        <li><strong>40.	Subir la página a un hosting: </strong></li>
+        Existen muchas páginas para subir proyectos web como Hostinger, HostGator y demás; sin embargo, la mayoría son de paga y no ofrecen muchas opciones a un plan gratuito. Otra opción más simple podría ser Github Pages, para fines educativos funciona bien. La alternativa más recomendada hoy en día es netlify ya que ofrece las siguientes ventajas:
+      
+        <ul style="list-style: none; padding: 0;">
+          <li><span style="color: green; font-weight: bold;">1.</span> Es totalmente gratis probarla</li>
+          <li><span style="color: green; font-weight: bold;">2.</span> Es muy fácil subir los proyectos así como su actualización.</li>
+          <li><span style="color: green; font-weight: bold;">3.</span> No tiene publicidad</li>
+          <li><span style="color: green; font-weight: bold;">4.</span> Netlify puede vincular múltiples nombres de dominio, mientras que GitHub Pages solo puede vincular un nombre de dominio.</li>
+          <li><span style="color: green; font-weight: bold;">5.</span> Con Netlify, el repositorio original puede ser privado, mientras que GitHub Pages requiere que el repositorio original sea público.</li>
+          <li><span style="color: green; font-weight: bold;">6.</span> Primero se crea una cuenta en Netlify utilizando la cuenta de GitHub. Para ello se requerirá autorizar ciertos permisos. Si por alguna razón no se puede crear la cuenta vinculándolo con GitHub, se tendría que crear por correo.</li>
+          <img alt="Image" src="img/img125.png"><br><br>
+          <img alt="Image" src="img/img126.png"><br><br>
+          <li><span style="color: green; font-weight: bold;">7.</span> Se accede a la opción “Sites” que está en el panel de la izquierda.</li>
+          <img alt="Image" src="img/img127.png"><br><br>
+          <li><span style="color: green; font-weight: bold;">8.</span> Se arrastra y suelta la carpeta que contiene el proyecto en el espacio correspondiente. No se recomienda subir los archivos por separado.</li>
+          <li><span style="color: green; font-weight: bold;">9.</span> Al esperar unos cuantos segundos, ya deberá funcionar y se accede a la opción “Site overview” que está en el panel de la izquierda.</li>
+          <li><span style="color: green; font-weight: bold;">10.</span> Si se necesita hacer deploy de algún cambio en el proyecto, se requiere volver a cargar la carpeta completa en la opción “Deploy” que está en el panel de la izquierda.</li>
+          <li><span style="color: green; font-weight: bold;">11.</span> Para cambiar el nombre del dominio para usar uno personalizado, se accede a la opción “Site configuration” que está en el panel de la izquierda y ahí se presiona el botón “Change site name”.</li>
+        </ul>
+
+        
+        
+        
+
+        <img alt="Image" src="img/img122.png"><br><br>
+        <li><strong> 41.	Auditar la calidad de la página con Lighthouse.  </strong></li>
+
+      
+        Existe una extensión que funciona en Google Chrome llamada  “Lighthouse” cuyo creador es de Google. Se le agrega una página web y lighthouse le ejecuta pruebas para crear un reporte y mostrar si la página web funciona correctamente. Con esto se termina la presente práctica.
+
+
+
+        <img alt="Image" src="img/img120.png"><br><br>
+     
+      </google-codelab-step>
+    
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
